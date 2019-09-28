@@ -1,9 +1,7 @@
-const checkRange = year => {
+function checkRange(year) {
 
-};
+}
 
-const validateYear = year => {
+function validateYear(year) {
 
-};
-
-export {checkRange, validateYear};
+}

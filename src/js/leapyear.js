@@ -1,5 +1,3 @@
-import {checkRange, validateYear} from 'util';
+function checkLeapYear(year) {
 
-const checkLeapYear = year => {
-
-};
+}
