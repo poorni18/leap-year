@@ -10,7 +10,7 @@ function validateYear(year) {
                 return false;
             }
             var current_year=new Date().getFullYear();
-            if((year < 1920) || (year > current_year))
+            if((year < 1120) || (year > current_year))
              {
                 return false;
              }
