@@ -1,12 +1,32 @@
 <html>
     <head>
         <title>Leap Year</title>
+        <script src="src/commons/constants.js"></script>
+        <script src="src/js/leapyear.js"></script>
+        <script src="src/commons/util.js"></script>
+        <script>
+            function onClickHandler() {
+                var year = document.getElementById("leap-year").value;
+                if(year && validateYear(year)){
+                    if(checkLeapYear(year)) {
+                       document.getElementById("result-text").innerHTML = "It is a leap year";
+                    } else {
+                        document.getElementById("result-text").innerHTML = "It is not a leap year";
+                    }
+                } else {
+                    document.getElementById("result-text").innerHTML = "Please enter a valid year";
+                }
+            }
+        </script>
     </head>
     <body>
         <div>
             <p>Enter the year: </p>
-            <input type="number" id="leap-year" name="leapYear"/>
-            <button onclick="checkLeapYear">Check for Leap year</button>
+            <input label="leapYear" type="number" id="leap-year" name="leapYear"/>
+            <button onclick="onClickHandler()">Check for Leap year</button>
+            <div>
+                <p id="result-text"></p>
+            </div>
         </div>
     </body>
 </html>
