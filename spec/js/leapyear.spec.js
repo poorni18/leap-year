@@ -15,6 +15,11 @@ describe("To check leap year functionality", () => {
            expect(checkLeapYear(2008)).toBeTruthy();
      });
 
+     it("Should display not a leap year if the given year is not divisible by 4", () => {
+
+            expect(checkLeapYear(2017)).toBeTruthy();
+      });
+
 }) ;
 
 
