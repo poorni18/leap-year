@@ -1,3 +1,3 @@
 function checkLeapYear(year) {
-    return year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0 );
+    return year % FOUR_HUNDRED === 0 || (year % HUNDRED !== 0 && year % FOUR === 0 );
 }

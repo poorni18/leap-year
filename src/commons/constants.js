@@ -1,0 +1,3 @@
+let FOUR_HUNDRED = 400;
+let FOUR = 4;
+let HUNDRED = 100;
