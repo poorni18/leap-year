@@ -6,7 +6,7 @@
         <script src="src/commons/util.js"></script>
         <script>
             function onClickHandler() {
-                var year = document.getElementById("leap-year").value;
+                var year = parseInt(document.getElementById("leap-year").value, 10);
                 if(year && validateYear(year)){
                     if(checkLeapYear(year)) {
                        document.getElementById("result-text").innerHTML = "It is a leap year";
@@ -22,7 +22,7 @@
     <body>
         <div>
             <p>Enter the year: </p>
-            <input label="leapYear" type="number" id="leap-year" name="leapYear"/>
+            <input label="leapYear" type="number" id="leap-year" name="leapYear" />
             <button onclick="onClickHandler()">Check for Leap year</button>
             <div>
                 <p id="result-text"></p>

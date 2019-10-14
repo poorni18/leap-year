@@ -1,3 +1,3 @@
-let FOUR_HUNDRED = 400;
-let FOUR = 4;
-let HUNDRED = 100;
+const FOUR_HUNDRED = 400;
+const FOUR = 4;
+const HUNDRED = 100;
